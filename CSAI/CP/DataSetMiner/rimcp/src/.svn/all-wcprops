@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/csai_pm/!svn/ver/9/DataSetMiner/rimcp/src
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/Makefile.am
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/LICENSE
+END
+rimcp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/csai_pm/!svn/ver/9/DataSetMiner/rimcp/src/rimcp
+END
+rimcp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/rimcp.cpp
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/Makefile.in
+END
+my_regression.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/csai_pm/!svn/ver/9/DataSetMiner/rimcp/src/my_regression.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/csai_pm/!svn/ver/7/DataSetMiner/rimcp/src/Makefile
+END
+model_regression.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/csai_pm/!svn/ver/9/DataSetMiner/rimcp/src/model_regression.cpp
+END

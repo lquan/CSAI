@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/int
+END
+weights.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/int/weights.hpp
+END
+card.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/int/card.hpp
+END
+minmax.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/int/minmax.hpp
+END
+channel-bool.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/int/channel-bool.hpp
+END
+channel-int.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/int/channel-int.hpp
+END
+match.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/int/match.hpp
+END

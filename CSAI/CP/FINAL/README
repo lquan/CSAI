@@ -1,0 +1,25 @@
+Philippe Tanghe
+Li Quan
+6/4/2011
+---
+Capita Selecta AI - Regel-gebaseerde Regressie
+http://people.cs.kuleuven.be/~siegfried.nijssen/capita2011/opgave.html
+---
+In DataSetMiner/rimcp/src bevinden zich de bestanden voor het Gecode systeem (model_regression.cpp en my_regression.cpp)
+
+In DataSetMiner/src/SetMiner.java bevinden zich op regels 18-21 instelbare parameters.
+PRUNE 				-- pruning aan/uit
+RULECOST 			-- kost van een regel (gebruikt voor pruning)
+MAX_NB_LEAF      	-- maximum aantal instanties in leaf van beslissingsboom
+PREDICT_AVERAGE		-- gebruik gemiddelde als voorspelling (anders mediaan)
+
+juiste pad naar rimcp instellen (zie regel 317)
+
+invoer/uitvoer
+een eerste arff bestandsnaam, verwijzend naar het bestand met trainingsvoorbeelden (invoer)
+een tweede arff bestandsnaam, verwijzend naar het bestand met testvoorbeelden; hierop moet je algoritme voorspellingen gaan doen (invoer)
+een derde arff bestandsnaam, verwijzend naar het bestand waarin voor elk testvoorbeeld in de laatste kolom opgeslagen wordt wat de voorspelling is (voorbeelden in deze arff moeten dezelfde volgorde hebben als in de arff met testvoorbeelden) (uitvoer)
+een vierde arff bestandsnaam, waarin de gevonden itemsets worden opgeslagen. In dit bestand moet elke rij één gevonden itemset bevatten. De itemset moet voorgesteld worden door een 1 te plaatsen in de kolommen overeenkomstig met de gevonden items. (uitvoer)
+
+
+

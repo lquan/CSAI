@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode
+END
+qsolver_qcop.cc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/qsolver_qcop.cc
+END
+QCOPPlus.cc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/QCOPPlus.cc
+END
+WorkComparators.hh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/WorkComparators.hh
+END
+qsolver_qcsp.cc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/qsolver_qcsp.cc
+END
+QCSPPlusUnblockable.hh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/QCSPPlusUnblockable.hh
+END
+clean
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/clean
+END
+qsolver_parallel.hh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/qsolver_parallel.hh
+END
+qecode.hh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/qecode.hh
+END
+AbstractWorker.hh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/AbstractWorker.hh
+END
+Worker.hh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/Worker.hh
+END
+WorkManager.cc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/WorkManager.cc
+END
+myspace.hh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/myspace.hh
+END
+myDom.cc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/myDom.cc
+END
+StrategyNode.hh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/StrategyNode.hh
+END
+OptVar.hh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/OptVar.hh
+END
+Strategy.cc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/Strategy.cc
+END
+qsolver_unblockable.hh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/qsolver_unblockable.hh
+END
+UnblockableBranching.hh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/UnblockableBranching.hh
+END
+UnblockableViewValBranching.hh
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/UnblockableViewValBranching.hh
+END
+Work.hh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/Work.hh
+END
+qsolver_qcop.hh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/qsolver_qcop.hh
+END
+QCOPPlus.hh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/QCOPPlus.hh
+END
+shortdesc.ac
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/shortdesc.ac
+END
+qsolver_qcsp.hh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/qsolver_qcsp.hh
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/configure
+END
+Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/Doxyfile
+END
+QCSPPlusUnblockable.cc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/QCSPPlusUnblockable.cc
+END
+Makefile.in.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/Makefile.in.in
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/configure.ac
+END
+qsolver_parallel.cc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/qsolver_parallel.cc
+END
+vartype.hh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/vartype.hh
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/README
+END
+Worker.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/Worker.cc
+END
+WorkManager.hh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/WorkManager.hh
+END
+myspace.cc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/myspace.cc
+END
+StrategyNode.cc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/StrategyNode.cc
+END
+OptVar.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/OptVar.cc
+END
+Strategy.hh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/Strategy.hh
+END
+qsolver_unblockable.cc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/qsolver_unblockable.cc
+END
+UnblockableViewValBranching.cc
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/UnblockableViewValBranching.cc
+END
+Work.cc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/contribs/qecode/Work.cc
+END

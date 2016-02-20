@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test
+END
+assign.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/assign.cpp
+END
+int.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/int.cpp
+END
+test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/test.cpp
+END
+int.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/int.hpp
+END
+branch.hh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/branch.hh
+END
+set.hh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/set.hh
+END
+test.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/test.hpp
+END
+afc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/afc.cpp
+END
+branch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/branch.cpp
+END
+set.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/set.cpp
+END
+set.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/set.hpp
+END
+test.hh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/test.hh
+END
+search.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/search.cpp
+END
+assign.hh
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/assign.hh
+END
+int.hh
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/test/int.hh
+END

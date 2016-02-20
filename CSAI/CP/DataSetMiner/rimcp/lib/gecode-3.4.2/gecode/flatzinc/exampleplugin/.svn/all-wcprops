@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/exampleplugin
+END
+myplugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/exampleplugin/myplugin.cpp
+END
+test_myplugin.fzn
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/exampleplugin/test_myplugin.fzn
+END
+myplugin.pro
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/exampleplugin/myplugin.pro
+END
+myplugin.hh
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/exampleplugin/myplugin.hh
+END

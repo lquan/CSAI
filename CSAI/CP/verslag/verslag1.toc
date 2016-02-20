@@ -1,0 +1,8 @@
+\select@language {dutch}
+\contentsline {section}{\numberline {1}Inleiding}{2}{section.1}
+\contentsline {section}{\numberline {2}Constraint programming}{2}{section.2}
+\contentsline {section}{\numberline {3}Regressiemodel}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Opbouwen beslissingsboom}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Pruning}{3}{subsection.3.2}
+\contentsline {section}{\numberline {4}Experimenten invloed parameters}{4}{section.4}
+\contentsline {section}{\numberline {5}Conclusie}{5}{section.5}

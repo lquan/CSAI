@@ -1,0 +1,58 @@
+This is RIMCP.
+
+RIMCP is based on CP4IM:
+
+http://dtai.cs.kuleuven.be/CP4IM/
+
+It is part of an exercise for "Capita Selecta Artificial Intelligence":
+
+http://www.people.cs.kuleuven.be/~siegfried.nijssen/capita2011
+
+For questions: mail siegfried.nijssen@cs.kuleuven.be
+
+Compiling:
+==========
+Run the following commands on a Unix command line:
+
+./autogen.sh
+make
+
+This should automatically download and compile Gecode with the correct flags, 
+as well as compile RIMCP against this Gecode code base.
+Please note that compiling Gecode for the first time can take a long time.
+
+./autogen.sh requires autoconf and automake to be installed.
+In Ubuntu systems, these can be installed with
+
+sudo apt-get install autoconf automake 
+
+Troubleshooting:
+================
+Compilation errors on some systems can be due to
+incorrectly linked/compiled libraries - make sure that src/Makefile.am
+includes the correct libraries in the LDADD variable.
+
+
+Running:
+========
+To run the code, download an arff file from the course website.
+Run it with:
+
+./rimcp -datafile filename.arff
+
+in the src directory.
+Please note that the current code is incomplete and hence will not compute 
+something useful.
+
+At least the file "my_regression.cpp" needs to be modified - instructions
+on how to do this can be found in this "my_regression.cpp".
+
+
+Troubleshooting:
+================
+Your system needs to be able to find the Gecode libraries. Ensure that the
+LD_LIBRARY_PATH variable includes the correct directory, eg. type on the
+command line before running ./rimcp:
+
+export LD_LIBRARY_PATH=lib/gecode-3.4.2
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/bin-packing
+END
+propagate.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/bin-packing/propagate.hpp
+END
+propagate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/bin-packing/propagate.cpp
+END

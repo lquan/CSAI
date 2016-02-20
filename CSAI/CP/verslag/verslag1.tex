@@ -1,0 +1,224 @@
+\documentclass[a4paper,dutch,11pt,]{article}
+\usepackage{mystyle}
+\usepackage[lined,ruled,commentsnumbered]{algorithm2e}
+\title{Regel-gebaseerde regressie\\\small{Capita selecta computerwetenschappen\\ Artificiële intelligentie (|H05N0a|)}}
+%\subtitle{}
+\author{Philippe Tanghe \and Li Quan}
+%\subject{Verslag}
+\date{6 april 2011}
+%\bibliographystyle{abbrv}
+
+
+\begin{document}
+ 
+\maketitle
+
+
+\tableofcontents
+\clearpage
+
+\section{Inleiding}
+Het doel van de opgave is een algoritme te schrijven dat een regressiemodel leert. Dit regressiemodel moet gebaseerd zijn op een verzameling regels. De individuele regels worden geleerd met behulp van constraint programming via het Gecode systeem.
+Het samenstellen van de verzameling regels gebeurt in Java.
+%, teerwijl je voor het samenstellen van een verzameling regels gebruik kunt maken van machine learning systemen. 
+
+
+\section{Constraint programming}
+De individuele regels worden via Gecode als volgt geleerd: een itemset moet de data zo goed mogelijk in twee groepen splitsen (nl., voorbeelden die de itemset bevatten en die dat niet doen), waarbij de kwaliteit van de splitsing gemeten wordt door de mean squared error. 
+
+Voor het propageren wordt er een ondergrens gezocht voor deze error. Deze ondergrens wordt gebruikt om de zoekruimte te verkleinen (itemsets met een hogere error kunnen genegeerd worden).
+
+
+% een aanpassing daar zou niet nodig moeten zijn, denk ik.
+% In de code voor het model definieer je het gewenste resultaat, in dit geval
+% een lage error, wat betekent dat deze variable de laagst mogelijke waarde aan
+% moet kunnen nemen.
+% In de propagator gaat het er niet om een bovengrens te vinden op de error,
+% maar een ondergrens. Alle te vinden itemsets moeten slechter (d.w.z hogere
+% error) scoren dan deze ondergrens. Het idee is dat wanneer deze ondergrens te
+% hoog is, je dit deel van de zoekruimte niet meer hoeft te bekijken. Alleen
+% wanneer de ondergrens voldoende laag is moet je verder zoeken.
+
+
+% Je gaat er in dit voorbeeld dan dus vanuit dat de gevonden itemset m1 voorspelt voor de voorbeelden die de itemset bevatten, of anders m2.
+
+%Een aanvullende voorwaarde zou kunnen zijn dat de itemset een zeker minimaal aantal voorbeelden bedekt.
+
+%Een voorbeeld van een itemset die we onder deze voorwaarden kunnen vinden is "A en B".
+
+%Voor het implementeren van deze voorwaarden (constraints) gebruiken we een specifiek constraint programming systeem geïmplementeerd in C++, Gecode. In dit constraint programming systeem kunnen in principe op declaratieve wijze de constraints beschreven worden, terwijl het systeem vervolgens naar oplossingen zoekt. 
+
+\section{Regressiemodel}
+% In het tweede deel is het de bedoeling dat je het constraint programming systeem iteratief gebruikt om naar itemsets te zoeken. De verzameling gevonden itemsets moeten samen een zo goed mogelijk regressiemodel vormen voor de trainingdata. Je kunt experimenteel bepalen of het gebruikte optimalisatie-criterium in het CP systeem aansluit bij je algoritme voor het bouwen van een verzameling patronen. 
+
+\subsection{Opbouwen beslissingsboom}
+Voor het opbouwen van het regressiemodel (zie algoritme~\ref{buildRegressionModel}) wordt het constraint programming systeem herhaaldelijk opgeroepen. Er wordt een beslissingsboom opgesteld door recursief op de gecoverde en niet-gecoverde voorbeelden het constraint programming systeem opnieuw los te laten tot de set van voorbeelden klein genoeg is (parameter $MAX\_NB\_LEAF$). 
+
+
+\begin{algorithm}[hbpt]
+\caption{buildRegressionModel(data, itemsets, items)}
+\label{buildRegressionModel}
+
+\eIf{nb instances of data $\leq$ $MAX\_NB\_LEAF$}
+{
+    prediction $\leftarrow$ average (OR mean) of class values of instances\;
+    add items to itemsets (as last rule)\;    
+}
+{
+items2 $\leftarrow$ find best pattern with rimcp on data\;
+items2 $\leftarrow$ items2 $\cup$ items\;
+dataC $\leftarrow$ instances of data that cover items in items2\; 
+dataNC $\leftarrow$ instances of data that don't cover items in items2\; 
+
+buildRegressionModel(dataC, itemsets, items2)\;
+buildRegressionModel(dataNC, itemsets, items)\;
+}
+\end{algorithm}
+
+
+Van de itemsets die door een set voorbeelden gecoverd zijn, wordt de unie genomen en zo bekomt men dan een regel voor die verzameling van voorbeelden. Er wordt zo een geordende regelset samengesteld (doordat de boom depth-first wordt opgebouwd). Dit heeft als gevolg dat de voorbeelden, die geen enkele itemset coveren, onder de laatste regel vallen. Dit is de else-regel, die een lege itemset voorstelt. Ter verduidelijking is het misschien nodig op te merken dat een regel enkel oplegt welke items gecovered moeten zijn en niet welke niet gecoverd mogen zijn.
+
+Voor elke leaf van de beslissingsboom (dit komt overeen met een regel/itemset) wordt een voorspelling gemaakt. Deze voorspelling is het gemiddelde (of mediaan) van de labels van de voorbeelden in de leaf.
+
+\subsection{Pruning}
+Het regressiemodel kan nog vereenvoudigd worden. Hiervoor kunnen bepaalde regels van dit model worden gepruned (zie algoritme~\ref{pruneRules} en \ref{pruneRule} --- data stelt de trainingset met de oorspronkelijke labels voor, predOr de trainingset met de voorspelde labels, itemsets de gevonden itemsets). 
+
+\begin{algorithm}[hbpt]
+\caption{pruneRules(data, predOr, itemsets)}
+\label{pruneRules}
+newPredOr $\leftarrow$ predOr\;
+\Repeat{size new ruleset $==$ size old ruleset}
+{
+itemsets $\leftarrow$ pruneRule(data, newPredOr, items)\;
+apply rules of itemsets on newPredOr\;   
+}
+return itemsets\;
+\end{algorithm}
+
+
+\begin{algorithm}[hbpt]
+\caption{pruneRule(data, predOr, itemsets)}
+\label{pruneRule}
+bestRulesSoFar $\leftarrow$ itemsets\;
+tempData $\leftarrow$ predOr\;
+bestError $\leftarrow$ error of predOr on data\;
+\For{each rule in itemsets}
+{
+tempRules $\leftarrow$ itemsets \textbackslash\ rule\;
+apply rules of tempRules on tempData\;
+error $\leftarrow$ error of tempData on data\;
+\If{ (error - $RULECOST$) < bestError } 
+{
+bestError = (error - $RULECOST$)\;
+bestRulesSoFar $\leftarrow$ tempRules\;
+}
+}
+return bestRulesSoFar\;
+\end{algorithm}
+
+Het model moet zonder deze regels een minstens zo goede accuracy hebben op de trainingsvoorbeelden. Dit laatste criterium is in de implementatie nog verzacht. In de implementatie worden regels een voor een gepruned met als voorwaarde dat de error op de trainingsvoorbeelden niet te sterk toeneemt (de error mag namelijk met een constante waarde toenemen---in het algoritme aangeduid als $RULECOST$---die ervoor zorgt dat eenvoudigere modellen met minder regels geprefereerd worden in overeenstemming met het Occam's razor-principe).
+
+
+\section{Experimenten invloed parameters}
+Om ons regressiemodel te evalueren, werd de gegeven dataset \emph{auto93bin} opgesplitst in een training- en een testset, die respectievelijk $2/3$ en $1/3$ van de originele dataset bevatten. 
+
+Tabel~\ref{invloedParameters} toont verschillende parameterkeuzes en hun invloed op het aantal regels, en de bijbehorende $L_1$ afstand tussen de voorspelling en de werkelijke labelwaarde (zowel voor de training- als de testset).
+De labelwaarden zijn bekomen door de gemiddeldes te nemen als voorspelling. 
+
+
+\begin{table}[hbpt] \scriptsize
+ \begin{tabular}{l S S S S S}
+\toprule
+  {prune} & {$RULECOST$} & {$MAX\_NB\_LEAF$} & {nb of rules} & {error trainingset} & {error testset} \\\midrule
+
+false&	{/}&	 3&	 	33&	67.33 & 158.77\\
+true&	5&	 3&	 13&	87.90& 158.47\\\addlinespace
+false&	{/}&	5&		20& 85.92&	 143.73\\
+true&	5&	 5&	 12&	99.04&	 142.38\\\addlinespace
+false&	 {/}&	 7&	15&	 92.35& 141.78\\
+true&	5&	 7&	 10&	 106.33& 139.90\\\addlinespace
+false&	{/}&	 10&	 11&	 102.05&  139.84\\
+true&	5&	 10&	 	 9&109.06&	 137.96\\ \addlinespace
+
+
+true&	0&	 3&	  33&	67.33&	 158.77\\
+true&	0&	 5&	  20&	85.92&	 143.73\\
+true&	0&	 7&	 15&	 92.35&	 141.78\\
+true&	0&	 10&	 	 11&102.05&	 139.84\\ \addlinespace
+
+true&	3&	 3&	 15&	80.13&	  158.47\\
+true&	3&	 5&	 14&	 92.03&	 143.73\\
+true&	3&	 7&	 12&	99.35&	  141.78\\
+true&	3&	 10&		 11& 102.05&	 139.84\\ \addlinespace
+
+true&	10&	 3&	  12&	94.9&	 158.47\\
+true&	10&	 5&		 8&	 124.32& 142.38\\
+true&	10&	 7&		 8& 118.53&	 143.39\\
+true&	10&	 10&	 	 8&114.29&	 137.96\\
+\bottomrule
+ \end{tabular}
+\caption{Voorspelling met gemiddelde. Invloed van de parameters op de training en test set error.}
+\label{invloedParameters}
+\end{table}
+Een grotere waarde voor $MAX\_NB\_LEAF$ zorgt uiteraard voor minder regels; de error op de trainingset wordt over het algemeen hoger terwijl de error op de testset lichtjes daalt. Dit betekent dat er aanvankelijk overfitting gebeurde. Bij te grote leaves zal uiteindelijk de fout op de testset weer stijgen (aangezien er dan te weinig regels zijn voor een goed model).
+
+De parameter $RULECOST$ bepaalt de trade-off tussen het aantal regels en de fout op de trainingset: bij grotere waarden wordt er meer gepruned.
+Minder regels leidt echter meestal tot een grotere fout op de trainingset, dus is het nodig om een voldoende hoge $RULECOST$ te hebben om eenvoudigere modellen te bekomen. Vaak lijkt pruning een iets kleinere error te hebben op de testset, wat te verklaren valt doordat het gevonden model eenvoudiger is.
+
+
+
+Tabel~\ref{invloedParameters2} toont enkele resultaten waarbij de mediaan werd gebruikt als voorspelling.
+Uit de resultaten lijkt de mediaan een betere keuze te zijn voor het regressiemodel.
+
+\begin{table}[hbpt] \scriptsize
+ \begin{tabular}{l S S S S S}
+\toprule
+  {prune} & {$RULECOST$} & {$MAX\_NB\_LEAF$} & {nb of rules} & {error trainingset} & {error testset} \\\midrule
+false&	{/}&	 3&	 	 33&54.20&	 127.00\\
+true&	 5&	 3&	 11&	 89.30&	 128.20\\
+ false&	{/}&	 5&	 20&	 67.60&	 125.55\\
+ true&	5&	 5&	 11&	 89.65&	 126.90\\
+ false&	{/}&	 10&	 11&	91.10&	  118.15\\
+true&	5&	 10&	 10&	99.04&	  126.40\\
+
+\bottomrule
+ \end{tabular}
+
+\caption{Voorspelling met mediaan. Invloed van de parameters op de training en test set error.}
+\label{invloedParameters2}
+\end{table}
+
+
+Voor de \emph{jak2}-dataset kon Gecode aanvankelijk geen itemset vinden: dit kwam doordat de dataset enkele extreem grote waarden bevatte. Na normalisatie van de waarden, kon er echter wel een itemset gevonden worden. Wegens tijdsrestricties werden de experimenten voor deze dataset niet verder uitgevoerd in Java zelf.
+
+
+% Dit is slechts één voorbeeld van het afleiden van een regelgebaseerd regressiemodel. Je kunt je ook andere methoden voorspellen: bijv., je zou ook voor de voorbeelden bedekt door een eerdere regel een nieuwe regel kunnen proberen te leren (dan krijg je zoiets als een beslissingsboom, met regels in de interne knopen). Je zou ook een voorspelling kunnen baseren op een gemiddelde van verschillende regels, of de voorspelling van een regel op de mediaan van de trainingsvoorbeelden baseren, in plaats van het gemiddelde. Het is aan jullie om een keuze te maken en een zo goed mogelijk regressiemodel te leren. 
+
+% mediaan ipv gemiddelde
+% leaves klein genoeg
+
+\section{Conclusie}
+Het optimalisatiecriterium voor het Gecodesysteem dat zoekt naar één itemset gebruikt de mean squared error (van de gecoverde en niet-gecoverde).
+Voor het regressiemodel werd een beslissingboom opgesteld waarbij de leaves de uiteindelijke itemsets zijn, waarbij de bijbehorende voorspelling gebeurt aan de hand van het gemiddelde---of de mediaan. Het zo bekomen model kan uiteindelijk nog gepruned worden, waarbij elke verwijderde regel een bepaalde winst oplevert. 
+
+De parameters zijn uiteraard sterk afhankelijk van de gegeven dataset (zo is er onder andere de beperkte grootte van de \emph{auto93bin} dataset). De conclusies getrokken uit de experimenten zijn dus moeilijk te veralgemenen.
+
+
+% \clearpage
+
+% %% Define a new 'leo' style for the package that will use a smaller font.
+% \makeatletter
+% \def\url@leostyle{%
+%   \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+% \makeatother
+% %% Now actually use the newly defined style.
+% \urlstyle{leo}
+
+%\bibliography{biblio}
+
+
+\end{document}
+
+
+	
+

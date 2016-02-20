@@ -1,0 +1,4 @@
+for document in *.eps
+do
+	ps2pdf $document
+done

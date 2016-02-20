@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel
+END
+re-eq.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel/re-eq.hpp
+END
+common.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel/common.hpp
+END
+eq.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel/eq.hpp
+END
+re-subset.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel/re-subset.hpp
+END
+subset.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel/subset.hpp
+END
+nosubset.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel/nosubset.hpp
+END
+nq.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel/nq.hpp
+END

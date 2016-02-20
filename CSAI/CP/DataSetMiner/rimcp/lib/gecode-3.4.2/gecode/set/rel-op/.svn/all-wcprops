@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op
+END
+partition.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/partition.hpp
+END
+post-nocompl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/post-nocompl.cpp
+END
+superofinter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/superofinter.hpp
+END
+common.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/common.hpp
+END
+post-compl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/post-compl.cpp
+END
+post-nocompl-cvc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/post-nocompl-cvc.cpp
+END
+post-compl-cvc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/post-compl-cvc.cpp
+END
+union.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/union.hpp
+END
+subofunion.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/subofunion.hpp
+END
+inter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/inter.hpp
+END
+post-nocompl-cvv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/post-nocompl-cvv.cpp
+END
+post-nocompl-vvc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/post-nocompl-vvc.cpp
+END
+post.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/post.hpp
+END
+post-compl-cvv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/post-compl-cvv.cpp
+END
+post-compl-vvc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op/post-compl-vvc.cpp
+END

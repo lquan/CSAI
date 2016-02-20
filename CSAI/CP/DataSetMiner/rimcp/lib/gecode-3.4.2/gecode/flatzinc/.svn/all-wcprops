@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/CHANGES
+END
+parser.tab.hh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/parser.tab.hh
+END
+lexer.lxx
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/lexer.lxx
+END
+parser.yxx
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/parser.yxx
+END
+ast.hh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/ast.hh
+END
+varspec.hh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/varspec.hh
+END
+parser.hh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/parser.hh
+END
+registry.hh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/registry.hh
+END
+flatzinc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/flatzinc.cpp
+END
+registry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/registry.cpp
+END
+conexpr.hh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/conexpr.hh
+END
+lexer.yy.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/lexer.yy.cpp
+END
+symboltable.hh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/symboltable.hh
+END
+option.hh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/option.hh
+END
+parser.tab.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/parser.tab.cpp
+END
+plugin.hh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/flatzinc/plugin.hh
+END

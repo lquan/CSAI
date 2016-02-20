@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/csai_pm/!svn/ver/16/DataSetMiner
+END
+jak2.arff
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/csai_pm/!svn/ver/19/DataSetMiner/jak2.arff
+END
+autotraining.arff
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/csai_pm/!svn/ver/20/DataSetMiner/autotraining.arff
+END
+jak2training.arff
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/csai_pm/!svn/ver/20/DataSetMiner/jak2training.arff
+END
+tmppattern
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/csai_pm/!svn/ver/21/DataSetMiner/tmppattern
+END
+predictionsoriginal.arff
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/csai_pm/!svn/ver/21/DataSetMiner/predictionsoriginal.arff
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/csai_pm/!svn/ver/5/DataSetMiner/.project
+END
+itemsets.arff
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/csai_pm/!svn/ver/21/DataSetMiner/itemsets.arff
+END
+predictions.arff
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/csai_pm/!svn/ver/21/DataSetMiner/predictions.arff
+END
+autotest.arff
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/csai_pm/!svn/ver/20/DataSetMiner/autotest.arff
+END
+tmpdata.arff
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/csai_pm/!svn/ver/21/DataSetMiner/tmpdata.arff
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/csai_pm/!svn/ver/5/DataSetMiner/.classpath
+END
+jak2test.arff
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/csai_pm/!svn/ver/20/DataSetMiner/jak2test.arff
+END

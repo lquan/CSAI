@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc
+END
+makedepend.perl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/makedepend.perl
+END
+genlcovmakefile.perl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/genlcovmakefile.perl
+END
+genvarimp.perl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/genvarimp.perl
+END
+gentxtchangelog.perl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/gentxtchangelog.perl
+END
+genstatistics.perl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/genstatistics.perl
+END
+genbranch.perl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/genbranch.perl
+END
+genxcodeproj.perl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/genxcodeproj.perl
+END
+fixautoheader.perl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/fixautoheader.perl
+END
+genlicense.perl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/genlicense.perl
+END
+getrevision.perl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/getrevision.perl
+END
+gencurrentchangelog.perl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/gencurrentchangelog.perl
+END
+allexamples.perl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/allexamples.perl
+END
+svn-ignore.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/svn-ignore.txt
+END
+genchangelog.perl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/genchangelog.perl
+END
+fixproperties.sh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/fixproperties.sh
+END
+svn-ignore-root.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/misc/svn-ignore-root.txt
+END

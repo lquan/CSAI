@@ -1,0 +1,201 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[dutch]{babel}
+\usepackage{booktabs}
+\usepackage[ruled]{algorithm2e}
+\usepackage{siunitx}
+\mode<presentation>
+\dontprintsemicolon
+
+
+\usetheme{Frankfurt}
+
+\author{\hspace{-1 cm}Philippe Tanghe\hspace{1 cm}\and Li Quan}
+\title{Regel-gebaseerde regressie}
+\date{27 april 2011}
+\subtitle{Capita selecta computerwetenschappen\\ Artificiële intelligentie (|H05N0a|)}
+
+
+% \AtBeginSection[]{\begin{frame}\frametitle{Inhoudsopgave}\tableofcontents[currentsection]\end{frame}}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+% \begin{frame}{Inhoudsopgave}
+% \tableofcontents%[pausesections]
+% \end{frame}
+
+
+\begin{frame}
+\frametitle{Overzicht}
+\begin{itemize}
+ \item optimalisatiecriterium Gecode: mean squared error
+ \item regressiemodel: beslissingsboom + pruning
+\end{itemize}
+
+% Het optimalisatiecriterium voor het Gecodesysteem dat zoekt naar één itemset
+% gebruikt de mean squared error (van de gecoverde en niet-gecoverde). 
+% 
+% Voor
+% het  werd een beslissingboom opgesteld waarbij de leaves de
+% uiteindelijke itemsets zijn, waarbij de bijbehorende voorspelling gebeurt aan
+% de hand van het gemiddelde—of de mediaan. Het zo bekomen model kan
+% uiteindelijk nog gepruned worden, waarbij elke verwijderde regel een bepaalde
+% winst oplevert. 
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Beslissingsboom}
+\begin{algorithm}[H]
+\caption{buildRegressionModel(data, itemsets, items)}
+% \alert{buildRegressionModel(data, itemsets, items)}
+
+\label{buildRegressionModel}
+
+\eIf{nb instances of data $\leq$ $MAX\_NB\_LEAF$}
+{
+    prediction $\leftarrow$ average (OR mean) of class values of instances\;
+    add items to itemsets (as last rule)\;    
+}
+{
+items2 $\leftarrow$ find best pattern with rimcp on data\;
+items2 $\leftarrow$ items2 $\cup$ items\;
+dataC $\leftarrow$ instances of data that cover items in items2\; 
+dataNC $\leftarrow$ instances of data that don't cover items in items2\; 
+
+buildRegressionModel(dataC, itemsets, items2)\;
+buildRegressionModel(dataNC, itemsets, items)\;
+}
+\end{algorithm}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Pruning}
+\scriptsize{
+% \alert{pruneRules(data, predOr, itemsets)}
+\begin{algorithm}[H]
+ \caption{pruneRules(data, predOr, itemsets)}
+
+\label{pruneRules}
+newPredOr $\leftarrow$ predOr\;
+\Repeat{size new ruleset $==$ size old ruleset}
+{
+itemsets $\leftarrow$ pruneRule(data, newPredOr, items)\;
+apply rules of itemsets on newPredOr\;   
+}
+return itemsets\;
+\end{algorithm}
+
+
+% \alert{pruneRule(data, predOr, itemsets)}
+\begin{algorithm}[H]
+ \caption{pruneRule(data, predOr, itemsets)}
+\label{pruneRule}
+\scriptsize
+bestRulesSoFar $\leftarrow$ itemsets\;
+tempData $\leftarrow$ predOr\;
+bestError $\leftarrow$ error of predOr on data\;
+\For{each rule in itemsets}
+{
+tempRules $\leftarrow$ itemsets \textbackslash\ rule\;
+apply rules of tempRules on tempData\;
+error $\leftarrow$ error of tempData on data\;
+\If{ (error - $RULECOST$) < bestError } 
+{
+bestError = (error - $RULECOST$)\;
+bestRulesSoFar $\leftarrow$ tempRules\;
+}
+}
+return bestRulesSoFar\;
+\end{algorithm}
+ }
+\end{frame}
+
+% \begin{frame}
+%  \frametitle{Experimenten}
+% 
+% \begin{itemize}
+%  \item gemiddelde
+%  \item mediaan
+% \end{itemize}
+
+% \end{frame}
+
+\plainframe{
+
+\begin{table}[hbpt] \tiny 
+ \begin{tabular}{l S S S S S}
+\toprule
+  {prune} & {$RULECOST$} & {$MAX\_NB\_LEAF$} & {nb of rules} & {error trainingset} & {error testset} \\\midrule
+
+false&	{/}&	 3&	 	33&	67.33 & 158.77\\
+true&	5&	 3&	 13&	87.90& 158.47\\\addlinespace
+false&	{/}&	5&		20& 85.92&	 143.73\\
+true&	5&	 5&	 12&	99.04&	 142.38\\\addlinespace
+false&	 {/}&	 7&	15&	 92.35& 141.78\\
+true&	5&	 7&	 10&	 106.33& 139.90\\\addlinespace
+false&	{/}&	 10&	 11&	 102.05&  139.84\\
+true&	5&	 10&	 	 9&109.06&	 137.96\\ \addlinespace
+
+
+true&	0&	 3&	  33&	67.33&	 158.77\\
+true&	0&	 5&	  20&	85.92&	 143.73\\
+true&	0&	 7&	 15&	 92.35&	 141.78\\
+true&	0&	 10&	 	 11&102.05&	 139.84\\ \addlinespace
+
+true&	3&	 3&	 15&	80.13&	  158.47\\
+true&	3&	 5&	 14&	 92.03&	 143.73\\
+true&	3&	 7&	 12&	99.35&	  141.78\\
+true&	3&	 10&		 11& 102.05&	 139.84\\ \addlinespace
+
+true&	10&	 3&	  12&	94.9&	 158.47\\
+true&	10&	 5&		 8&	 124.32& 142.38\\
+true&	10&	 7&		 8& 118.53&	 143.39\\
+true&	10&	 10&	 	 8&114.29&	 137.96\\
+\bottomrule
+ \end{tabular}
+\caption{Voorspelling met gemiddelde. Invloed van de parameters op de training en test set error.}
+\label{invloedParameters}
+\end{table}
+}
+
+\plainframe{
+\begin{table}[hbpt] \tiny 
+ \begin{tabular}{l S S S S S}
+\toprule
+  {prune} & {$RULECOST$} & {$MAX\_NB\_LEAF$} & {nb of rules} & {error trainingset} & {error testset} \\\midrule
+false&	{/}&	 3&	 	 33&54.20&	 127.00\\
+true&	 5&	 3&	 11&	 89.30&	 128.20\\
+ false&	{/}&	 5&	 20&	 67.60&	 125.55\\
+ true&	5&	 5&	 11&	 89.65&	 126.90\\
+ false&	{/}&	 10&	 11&	91.10&	  118.15\\
+true&	5&	 10&	 10&	99.04&	  126.40\\
+
+\bottomrule
+ \end{tabular}
+
+\caption{Voorspelling met mediaan. Invloed van de parameters op de training en test set error.}
+\label{invloedParameters2}
+\end{table}
+
+}
+
+
+
+
+
+
+
+
+\end{document}
+

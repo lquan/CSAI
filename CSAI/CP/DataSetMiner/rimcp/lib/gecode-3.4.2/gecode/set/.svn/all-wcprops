@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set
+END
+cardinality.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/cardinality.cpp
+END
+exec.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/exec.cpp
+END
+rel-op-singleton.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op-singleton.cpp
+END
+exception.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/exception.hpp
+END
+rel-op.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op.cpp
+END
+branch.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/branch.hh
+END
+sequence.hh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/sequence.hh
+END
+array.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/array.cpp
+END
+rel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel.cpp
+END
+limits.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/limits.hpp
+END
+array-traits.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/array-traits.hpp
+END
+array.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/array.hpp
+END
+branch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/branch.cpp
+END
+rel-op-ternary.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op-ternary.cpp
+END
+convex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/convex.cpp
+END
+int.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/int.hh
+END
+view.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/view.hpp
+END
+var-imp.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/var-imp.hpp
+END
+rel-op-const-cvc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op-const-cvc.cpp
+END
+int.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/int.cpp
+END
+convex.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/convex.hh
+END
+rel-op-const-vcc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op-const-vcc.cpp
+END
+distinct.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/distinct.cpp
+END
+element.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/element.cpp
+END
+distinct.hh
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/distinct.hh
+END
+element.hh
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/element.hh
+END
+rel.hh
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel.hh
+END
+rel-op-const-cvv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op-const-cvv.cpp
+END
+rel-op-const-vvc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op-const-vvc.cpp
+END
+sequence.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/sequence.cpp
+END
+dom.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/dom.cpp
+END
+rel-op.hh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op.hh
+END
+rel-op-const-vcv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/set/rel-op-const-vcv.cpp
+END

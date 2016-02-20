@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/sorted
+END
+narrowing.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/sorted/narrowing.hpp
+END
+propagate.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/sorted/propagate.hpp
+END
+matching.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/sorted/matching.hpp
+END
+order.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/sorted/order.hpp
+END
+sortsup.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/sorted/sortsup.hpp
+END

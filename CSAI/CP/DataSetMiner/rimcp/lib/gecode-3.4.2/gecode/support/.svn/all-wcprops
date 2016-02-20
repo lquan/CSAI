@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support
+END
+heap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/heap.cpp
+END
+macros.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/macros.hpp
+END
+bitset-base.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/bitset-base.hpp
+END
+static-stack.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/static-stack.hpp
+END
+exception.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/exception.cpp
+END
+thread.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/thread.hpp
+END
+block-allocator.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/block-allocator.hpp
+END
+dynamic-array.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/dynamic-array.hpp
+END
+heap.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/heap.hpp
+END
+exception.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/exception.hpp
+END
+bitset.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/bitset.hpp
+END
+auto-link.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/auto-link.hpp
+END
+int-type.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/int-type.hpp
+END
+dynamic-stack.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/dynamic-stack.hpp
+END
+marked-pointer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/marked-pointer.hpp
+END
+config.hpp.in
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/config.hpp.in
+END
+sort.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/sort.hpp
+END
+cast.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/cast.hpp
+END
+config.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/config.hpp
+END
+dynamic-queue.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/dynamic-queue.hpp
+END
+random.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/random.hpp
+END
+timer.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/support/timer.hpp
+END

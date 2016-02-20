@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/csai_pm/!svn/ver/14/DataSetMiner/rimcp
+END
+autogen.sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/autogen.sh
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/configure
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/missing
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/install-sh
+END
+jak2_normalized.arff
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/csai_pm/!svn/ver/20/DataSetMiner/rimcp/jak2_normalized.arff
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/Makefile.in
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/csai_pm/!svn/ver/7/DataSetMiner/rimcp/Makefile
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/configure.ac
+END
+gecode.m4
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/gecode.m4
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/aclocal.m4
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/README
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/Makefile.am
+END
+out.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/csai_pm/!svn/ver/19/DataSetMiner/rimcp/out.txt
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/.gitignore
+END
+temp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/csai_pm/!svn/ver/20/DataSetMiner/rimcp/temp.txt
+END
+config.status
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/csai_pm/!svn/ver/7/DataSetMiner/rimcp/config.status
+END
+depcomp
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/depcomp
+END

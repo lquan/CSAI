@@ -1,0 +1,26 @@
+%test the creation of a neighbouring schedule
+
+%see p 3 - 6 for correct results
+clc; clear;
+% Correct schedule
+S = load('paper_schedule.txt')
+
+
+% SwapHomes
+SwapHomes(S,2,4)
+
+% SwapRounds
+SwapRounds(S,3,5)
+
+% SwapTeams
+SwapTeams(S,2,5)
+
+% PartialSwapRounds
+S2 = [6 -2 2 3 -5 -4 -3 5 4 -6;
+    
+PartialSwapRounds(S2,2,2,9)
+
+
+
+
+

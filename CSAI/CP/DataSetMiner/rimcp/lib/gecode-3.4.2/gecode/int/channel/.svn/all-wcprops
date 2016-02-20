@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/channel
+END
+link-multi.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/channel/link-multi.hpp
+END
+link-single.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/channel/link-single.cpp
+END
+link-single.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/channel/link-single.hpp
+END
+base.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/channel/base.hpp
+END
+link-multi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/channel/link-multi.cpp
+END
+val.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/channel/val.hpp
+END
+dom.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/channel/dom.hpp
+END

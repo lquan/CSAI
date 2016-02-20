@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/task
+END
+fwd-to-bwd.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/task/fwd-to-bwd.hpp
+END
+iter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/task/iter.hpp
+END
+array.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/task/array.hpp
+END
+purge.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/task/purge.hpp
+END
+sort.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/task/sort.hpp
+END
+tree.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/task/tree.hpp
+END
+prop.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/task/prop.hpp
+END
+man-to-opt.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/task/man-to-opt.hpp
+END

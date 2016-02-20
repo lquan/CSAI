@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {dutch}
+\beamer@sectionintoc {1}{Inleiding}{3}{0}{1}
+\beamer@sectionintoc {2}{TTSA}{7}{0}{2}
+\beamer@sectionintoc {3}{Implementatie}{32}{0}{3}
+\beamer@sectionintoc {4}{Experimenten}{34}{0}{4}
+\beamer@sectionintoc {5}{Mogelijke verbeteringen}{50}{0}{5}
+\beamer@sectionintoc {6}{Conclusie}{61}{0}{6}

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling
+END
+unary.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/unary.cpp
+END
+cumulatives.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/cumulatives.cpp
+END
+cumulative.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/cumulative.cpp
+END
+task.hh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/task.hh
+END
+cumulative.hh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/cumulative.hh
+END
+cumulatives.hh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/cumulatives.hh
+END
+unary.hh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/scheduling/unary.hh
+END

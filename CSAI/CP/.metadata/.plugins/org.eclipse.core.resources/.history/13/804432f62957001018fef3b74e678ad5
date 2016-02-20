@@ -1,0 +1,118 @@
+import weka.core.converters.ConverterUtils.DataSource;
+import weka.core.converters.ArffSaver;
+import weka.core.Instances;
+import java.io.*;
+import java.util.*;
+
+class SetMiner {
+	
+
+	public static void main(String[] args) {
+		/*for (String arg: args)
+			System.out.println(arg);*/
+		/*if (args.length < 4) {
+			System.out.println("usage: 4 parameters!!!");
+			return;
+		}*/
+		
+		try {
+			// Read the data specified in the command line
+			DataSource source = new DataSource(args[0]);
+			Instances data = source.getDataSet();
+			if (data.classIndex() == -1)
+				data.setClassIndex(data.numAttributes() - 1);
+
+			// Find an itemset in this data using CP
+			int[] items = findPattern(data);
+
+			// Select the instances not covered by the itemset
+			Instances data2 = select (data, items);
+
+			
+			while (data2.numInstances() != 0) {
+				data2 = select ( data, items );
+				// Run the CP system again
+				items = findPattern ( data2 );
+			}
+			
+		}
+		catch ( Exception e ) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+
+	/***
+	 * Apply the constraint programming system to find the 'best' pattern in a dataset
+	 * @param data
+	 * @return int[] best pattern in the given dataset
+	 * @throws Exception
+	 */
+	public static int[] findPattern ( Instances data ) throws Exception {
+
+		// Write the data to a arff file
+		ArffSaver saver = new ArffSaver ();
+		saver.setInstances ( data );
+		saver.setFile (new File("tmpdata.arff"));
+		saver.writeBatch ();
+
+		// Run the CP system on the dataset - update the command line to the appropriate path
+		Runtime rt = Runtime.getRuntime();
+
+		// command AND environment path
+		// lol http://stackoverflow.com/questions/1763156/127-return-code-from
+		String[] command = {"rimcp/src/rimcp", "-datafile", "tmpdata.arff", "-solfile", "tmppattern"};
+		String[] envpath = {"LD_LIBRARY_PATH=rimcp/lib/gecode-3.4.2/"};
+
+		Process pr = rt.exec(command,envpath);
+		System.out.println("Running rimcp on " + data.numInstances () + " instances" );
+
+		int exitVal = pr.waitFor();
+		System.out.println("Exited with error code "+exitVal);
+
+		// Read the pattern file written by the CP system
+		BufferedReader in = new BufferedReader(new FileReader("tmppattern"));
+		String line, lastline = "";
+		if (!in.ready())
+			throw new IOException();
+		while ((line = in.readLine()) != null) {
+			lastline = line;
+		}
+		System.out.println("Pattern found: " + lastline );
+
+		// Parse the last line (containing the 'best' pattern) into an array of items
+		String items[] = lastline.split(" ");
+		int items2 [] = new int[items.length-2];
+
+		for ( int i = 0; i <items.length-2; i++ ) {
+			items2[i] = Integer.parseInt(items[i]);
+			System.out.println(data.attribute ( items2[i] ).name ());
+		}
+		in.close();
+
+		// Return the set of items
+		return items2;
+	}
+
+	/**
+	 * Selects instances NOT covered by the itemset
+	 * @param data 
+	 * @param items
+	 * @return instances NOT covered by items
+	 */
+	public static Instances select ( Instances data, int items[] ) {
+		Instances data2 = new Instances ( data, 0 );
+		for ( int i = 0; i < data.numInstances (); ++i ) {
+			for ( int j = 0; j < items.length; ++j )
+				if ( data.instance ( i ).value ( items[j] ) == 0 ) {
+					// one item is missing, add immediately
+					data2.add ( data.instance ( i ) );
+					break;
+				}
+
+		}
+		return data2;
+	}
+
+}

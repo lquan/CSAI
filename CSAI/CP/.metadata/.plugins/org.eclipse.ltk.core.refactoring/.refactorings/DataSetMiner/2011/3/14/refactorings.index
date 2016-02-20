@@ -1,0 +1,5 @@
+1301302089542	Rename local variable 'isCovered'
+1301310119096	Encapsulate field 'selected'
+1301310141216	Encapsulate field 'notSelected'
+1301310414310	Encapsulate field 'indicesSelected'
+1301565214329	Rename local variable 'itemList'

@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common
+END
+reader_arff.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/reader_arff.cpp
+END
+.dirstamp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/.dirstamp
+END
+floatoption.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/floatoption.cpp
+END
+fimcp_basic.hh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/fimcp_basic.hh
+END
+constraint_regression.hh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/constraint_regression.hh
+END
+options_fimcp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/options_fimcp.cpp
+END
+textoption.hh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/textoption.hh
+END
+regression.hh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/regression.hh
+END
+stringuintoption.hh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/stringuintoption.hh
+END
+stringuintoption.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/stringuintoption.cpp
+END
+regression.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/regression.cpp
+END
+textoption.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/textoption.cpp
+END
+constraint_regression.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/constraint_regression.cpp
+END
+fimcp_basic.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/fimcp_basic.cpp
+END
+.swo
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/.swo
+END
+floatoption.hh
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/floatoption.hh
+END
+.swp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/.swp
+END
+itemset.hh
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/src/common/itemset.hh
+END

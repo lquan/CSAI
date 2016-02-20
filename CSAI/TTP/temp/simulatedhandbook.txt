@@ -1,0 +1,4 @@
+Metaheuristics for Hard Optimization
+Simulated Annealing, Tabu Search, Evolutionary and Genetic Algorithms, Ant Colonies,… Methods and Case Studies
+
+Johann Dréo, Patrick Siarry, Alain Pétrowski and Eric Taillard

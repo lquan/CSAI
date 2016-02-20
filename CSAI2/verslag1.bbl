@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{Furer:2008:ACE:1429791.1429826}
+M.~F{\"u}rer and S.~{Prasad Kasiviswanathan}.
+\newblock Approximately counting embeddings into random graphs.
+\newblock In {\em Proceedings of the 11th international workshop, APPROX 2008,
+  and 12th international workshop, RANDOM 2008 on Approximation, Randomization
+  and Combinatorial Optimization: Algorithms and Techniques}, APPROX '08 /
+  RANDOM '08, pages 416--429, Berlin, Heidelberg, 2008. Springer-Verlag.
+
+\bibitem{DBLP:journals/cpc/Riordan00}
+O.~Riordan.
+\newblock Spanning subgraphs of random graphs.
+\newblock {\em Combinatorics, Probability {\&} Computing}, 9(2):125--148, 2000.
+
+\end{thebibliography}

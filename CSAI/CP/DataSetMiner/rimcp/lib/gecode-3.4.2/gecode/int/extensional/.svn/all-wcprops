@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/extensional
+END
+tuple-set.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/extensional/tuple-set.cpp
+END
+dfa.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/extensional/dfa.cpp
+END
+incremental.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/extensional/incremental.hpp
+END
+tuple-set.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/extensional/tuple-set.hpp
+END
+basic.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/extensional/basic.hpp
+END
+dfa.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/extensional/dfa.hpp
+END
+base.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/extensional/base.hpp
+END
+layered-graph.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode/int/extensional/layered-graph.hpp
+END

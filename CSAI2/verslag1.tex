@@ -1,0 +1,259 @@
+\documentclass[a4paper,english,12pt,]{scrartcl}
+\usepackage{mystyle}
+\def\lemmaautorefname{Lemma}
+
+\renewcommand{\phi}{\varphi}
+
+\title{Investigate parameters of F\"urer's algorithm}
+\subtitle{Capita Selecta: Artifical Intelligence (|H05N0a|)}
+\author{Li Quan}
+%\subject{Verslag}
+\date{April 26, 2011}
+\bibliographystyle{abbrv}
+\hyphenation{algorithm}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+ In this report, we discuss the influence of the parameters in F\"urer's~algorithm for approximately counting random embeddings into random graphs~\cite{Furer:2008:ACE:1429791.1429826}. 
+The algorithm depends on a new graph decomposition called the ordered bipartite decomposition\footnote{(\cite{Furer:2008:ACE:1429791.1429826}) Informally, such a decomposition generates a labeling of vertices such that every edge is between vertices with different labels and for every very vertex all neighbors with a higher label have identitical labels.
+The labeling implicitely generates a sequence of bipartite graphs, and the crucial part is to ensure that each of the bipartite graphs is of small size.  The size of the largest bipartite graph defines the width of the decomposition ($w= \max_i |E(H_i)| = \max_i e_{H_i}$).}.
+\end{abstract}
+
+
+%In particular, that a sufficient condition for the existence of decomposition of bounded with, is the bipartiteness of the graph. The algorithm only runs in polynomial time if a decomposition exists of bounded width (this can only happen if $\Delta$ is a constant). 
+% 
+% First we note that the algorithm Embeddings only works in polynomial time for a graph $H$ that has a decomposition of bounded width, which means that it must be bounded-degree $\Delta$. 
+Because the algorithm Embeddings returns an unbiased estimator, use of Chebyshev's inequality implies that repeating the algorithm $O(\epsilon^{-2}\mathds{E}_\mathcal{A}[Z^2]/\mathds{E}_\mathcal{A}[Z]^2)$ times and taking the mean of the outputs results in an fraps for estimating $C_H(G)=C$. 
+
+Therefore, to evaluate the efficiency, the critical ratio $\mathds{E}_\mathcal{A}[Z^2]/\mathds{E}_\mathcal{A}[Z]^2$ must be evaluated (and the complexity of the stochastic experiment itself, i.e., the algorithm Embeddings). 
+In the paper, the (related) easier ratio $\mathds{E}_\mathcal{G}[\mathds{E}_\mathcal{A}[Z^2]]/\mathds{E}_\mathcal{G}[\mathds{E}_\mathcal{A}[Z]]^2$ (critical ratio of averages) is bounded. The main result and the conditions are stated in the following lemma:
+% 
+\begin{lemma}[Main result~\cite{Furer:2008:ACE:1429791.1429826,DBLP:journals/cpc/Riordan00}] \label{main}
+ Let $H$ be a graph on $n$ vertices. Let $e_H=\alpha N = \alpha(n)N$, and let $p=p(n)\in(0,1)$ with $pN$ an integer ($N=\binom{n}{2}$). Let $\nu = \max{\{2,\gamma\}}$, with 
+\[
+\gamma = \gamma(H) = \max_{3\leq s \leq n} \{ \max{\{ e_F: F \subseteq H, v_F = s}\}/(s-2)\}.                                                                                                                                                       
+\]
+Suppose the following conditions hold: \begin{equation*} \textnormal{(1)}\hspace{0.3cm}pN \rightarrow \infty \hspace{0.75cm} \textnormal{(2)}\hspace{0.3cm} np^\nu/\Delta^4 \rightarrow \infty \hspace{0.75cm} \textnormal{(3)}\hspace{0.3cm} \alpha^3Np^{-2} \rightarrow 0. \end{equation*}
+
+Then, if $H$ is bounded-degree by $\Delta$, w.h.p.~for a random graph $G\in \mathcal{G}(n,p)$, the critical ratio is polynomially bounded in $n$: $\mathds{E}_\mathcal{A}[Z^2]/\mathds{E}_\mathcal{A}[Z]^2 = O(\textnormal{poly}(n))$, where poly$(n)$ depends on $w$ and $p$.
+%$G\in \mathcal{G}(n,\Omega(n^2))$ satisfies  $\mathds{E}[C^2]/\mathds{E}[C]^2 = 1+o(1)$.
+%$G\in \mathcal{G}(n,pN)$ satisfies  $\mathds{E}_\mathcal{G}[\mathds{E}_\mathcal{A}[Z^2]]/\mathds{E}_\mathcal{G}[\mathds{E}_\mathcal{A}[Z]]^2 = 1+o(1)$
+\end{lemma}
+
+This means that if $H$ has a decomposition of bounded width $w$, for almost all graphs $G$, running the algorithm poly($n$)$\epsilon^{-2}$ times and taking the mean, results in an $(1\pm\epsilon)$-approximation for $C$, where poly($n$) is a polynomial in $n$ depending on $w$ and $p$. Because each run of the algorithm happens in polynomial time (as $H$ is bounded-degree, the calculation of the number of embeddings can be done in polynomial time), the result is a fraps.
+
+Clearly, $w$ defines the efficiency of the algorithm: the larger it is, the more times the algorithm must be run to get a fraps for $C$.
+%\tableofcontents
+
+% When will the algorithm work well?
+% – If G has low degree
+% – If the decomposition of H has small width
+% – If H doesn’t have “long cycles”
+
+
+Now we consider the number of vertices in a partition class of the decomposition $|V_i|$. $V_i$ represents the set of vertices of $H$ which get embedded into $G$ during the $i$th stage of the algorithm (using the already constructed mapping of $U_i$). Intuitively, the number of vertices in the partition classes is somewhat related to the width of the decomposition (a trivial lower-bound was already given in the paper, more specifically $\Delta/2$).
+
+%the number of edges of $H_i=H[U_i \cup V_i]$.
+
+\begin{lemma}\label{lemmawidth}
+Let $V_1,\ldots,V_l$ be a decomposition of a graph $H = (V_H,E_H)$. Let $s$ and $t$ denote the sizes of the two largest partition classes. A (worst-case) upper-bound for the width of the decomposition is $st$.                                                                                                                                        
+%$V_{max,1}$ and $V_{max_2}$
+
+%$G\in \mathcal{G}(n,\Omega(n^2))$ satisfies  $\mathds{E}[C^2]/\mathds{E}[C]^2 = 1+o(1)$.
+%$G\in \mathcal{G}(n,pN)$ satisfies  $\mathds{E}_\mathcal{G}[\mathds{E}_\mathcal{A}[Z^2]]/\mathds{E}_\mathcal{G}[\mathds{E}_\mathcal{A}[Z]]^2 = 1+o(1)$
+\end{lemma}
+\begin{lemma}\label{nbverticespartition}
+Let $V_1,\ldots,V_l$ be a decomposition of a graph $H = (V_H,E_H)$ on $n$ vertices. Let $v_i$ denote the number of vertices in partition class $V_i$. An upper bound for the critical ratio of averages is then $(1+\frac{c}{n})(1+\frac{c}{n-v_1}) \ldots (1+\frac{c}{n - \sum_{j<\ell} v_j})$.
+\end{lemma}
+This means that $n$ should be large enough and that most vertices should be found in the later partition classes. Intuitively, in earlier stages we do not want a large set of vertices to embed.
+
+\autoref{main} and conditions (1)--(2) of \autoref{nbverticespartition} imply that the number of nodes of the pattern should be large enough: we want to observe ``interesting'' patterns. 
+This also means that the considered network should be large enough to have some embeddings of the pattern (therefore, it should also have a relatively large number of edges), but of course it should not be too large with respect to the pattern as that would make the search space huge.
+
+Condition (3) of \autoref{nbverticespartition} can be rewritten to $e_H^3n^{-4}p^{-2}\rightarrow 0$: the number of edges of $H$ should not be to large with respect to $n$. Again, the probability to have an edge between two nodes in the network $p$ should be relatively large.
+
+\paragraph{}
+In conclusion, the algorithm works well when the count is not too small (as already stated before but it is just the essence of the algorithm): the number of vertices in both the pattern and network graph should be relatively large enough and the network graph should not be too sparse. As the decomposition width of the pattern graph plays an important role in the efficiency, it should be relatively sparse (but not too sparse, as that would be an uninteresting pattern). 
+% 
+% We consider $G\in \mathcal{G}(n,p)$ to discuss the influence of the probability $R_n$ to have an edge between two nodes in the network.
+% It can be shown \cite{gilbert} that $R_n \sim 1 -2(1-p)^{n-1}$, asymptotically as $n\rightarrow\infty$.
+% 
+% Random graphs  
+% \cite{Erdos1959}
+
+
+\clearpage
+\appendix
+\section{Some examples}
+
+Consider the network graph $G$ and the pattern graph $H$ shown in \autoref{fig:GandH}.
+\begin{figure}[hbpt]
+ \centering
+ \includegraphics[width=0.85\textwidth]{./examples/GandH}
+  \caption{A network graph $G$ and a pattern graph $H$ with decomposition width 2. \label{fig:GandH}}
+ %\input{dia2H}
+\end{figure}
+
+We first show the algorithm for $H$ where $U_i=N_H(V_i)\cap V^{i-1}$ and where $U_1=\emptyset{}$; $U_2 = \mset{1}$; $U_3 = \mset{3}$ and $U_4 = \mset{2,4}$. Now we can easily construct the $H_i=H[U_i\cup V_i]$: $H_1=H[\mset{1}]$; $H_2=H[\mset{1,2,3}]$; $H_3 = H[\mset{3,4}]$ and $H_4 = H[\mset{4,5}]$.
+The width of the decomposition is $w= e_{H_2}=e_{H_4}=2$.
+A succesful run of the Embeddings algorithm might go as follows:
+
+\begin{multicols}{2}
+\footnotesize
+\begin{itemize}
+ \item $i\leftarrow 1$
+    \begin{itemize}
+      \item $G_f \leftarrow G[\mset{a,b,c,d,e,f,g,h}]$
+      \item $X_1 \leftarrow 8$
+      \item $\phi \leftarrow \mset{(1,a)}$
+      \item $X \leftarrow 8$
+      \item $Mark(1) \leftarrow \mset{a}$
+    \end{itemize}
+
+ \item $i\leftarrow 2$
+  \begin{itemize}
+      \item $G_f \leftarrow G[\mset{a,b,c,d,e,f,g,h}]$
+      \item $X_2 \leftarrow 5\times 4 = 20$
+      \item $\phi \leftarrow \mset{(1,a);(2,b);(3,d)}$
+      \item $X \leftarrow 8\times 20 = 160$
+      \item $Mark(2) \leftarrow \mset{a,b,d}$
+    \end{itemize}
+
+
+ \item $i\leftarrow 3$
+  \begin{itemize}
+      \item $G_f \leftarrow G[\mset{c,d,e,f,g,h}]$
+      \item $X_3 \leftarrow 1$
+      \item $\phi \leftarrow \mset{(1,a);(2,b);(3,c);(4,g)}$
+      \item $X \leftarrow 160$
+      \item $Mark(3) \leftarrow \mset{a,b,d,g}$
+    \end{itemize}
+
+ \item $i\leftarrow 4$
+  \begin{itemize}
+      \item $G_f \leftarrow G[\mset{b,c,e,f,g,h}]$
+      \item $X_4 \leftarrow 1$
+      \item $\phi \leftarrow \mset{(1,a);(2,b);(3,c);(4,g);(5,h)}$
+      \item $X \leftarrow 160$
+      \item $Mark(4) \leftarrow \mset{a,b,c,g,h}$
+    \end{itemize}
+
+\end{itemize}
+\end{multicols}
+
+The algorithm returns $X/|aut(H)|=160/(4!)=20/3$, which means the embedding was found with probability $3/20=0.15$.
+
+ \clearpage
+
+Now consider the pattern graph $H$ in \autoref{fig:HH}, where $U_1 = \emptyset{}$; $U_2 = \mset{1}$; $U_3 = \mset{2,3,4,5,6}$ and $U_4 = \mset{2,7}$, and,
+$H_1=H[\mset{1}]$; $H_2=H[\mset{1,2,3,4,5,6}]$; $H_3 = H[\mset{3,4,5,6,7}]$ and $H_4 = H[\mset{2,7,8}]$.
+The width of the decomposition is $w=\max_i e_{H_i} = e_{H_2}=5$.
+
+\begin{figure}[bp]
+ \centering
+ \includegraphics[width=0.45\textwidth]{./examples/H}
+  \caption{A pattern graph $H$ with decomposition width 5. \label{fig:HH}}
+ %\input{dia2H}
+\end{figure}
+
+A succesful run of the Embeddings algorithm: %Initialize $X \leftarrow 1; Mark(0) \leftarrow \emptyset; \phi(\emptyset)=\emptyset$.
+\begin{multicols}{2}
+\footnotesize
+\begin{itemize}
+ \item $i\leftarrow 1$
+    \begin{itemize}
+      \item $G_f \leftarrow G[\mset{a,b,c,d,e,f,g,h}]$
+      \item $X_1 \leftarrow 8$
+      \item $\phi \leftarrow \mset{(1,a)}$
+      \item $X \leftarrow 8$
+      \item $Mark(1) \leftarrow \mset{a}$
+    \end{itemize}
+
+ \item $i\leftarrow 2$
+  \begin{itemize}
+      \item $G_f \leftarrow G[\mset{a,b,c,d,e,f,g,h}]$
+      \item $X_2 \leftarrow 5! = 120$
+      \item $\phi \leftarrow \mset{(1,a);(2,b);(3,c);(4,d);(5,e);(6,f)}$
+      \item $X \leftarrow 8\times 120 = 960$
+      \item $Mark(2) \leftarrow \mset{a,b,c,d,e,f}$
+    \end{itemize}
+
+
+ \item $i\leftarrow 3$
+  \begin{itemize}
+      \item $G_f \leftarrow G[\mset{b,c,d,e,f,g,h}]$
+      \item $X_3 \leftarrow 1$
+      \item $\phi \leftarrow \mset{(1,a);(2,b);(3,c);(4,d);(5,e);(6,f);(7,g)}$
+      \item $X \leftarrow 960$
+      \item $Mark(3) \leftarrow \mset{a,b,c,d,e,f,g}$
+    \end{itemize}
+
+ \item $i\leftarrow 4$
+  \begin{itemize}
+      \item $G_f \leftarrow G[\mset{b,g,h}]$
+      \item $X_4 \leftarrow 1$
+      \item $\phi \leftarrow \mset{(1,a);(2,b);(3,c);(4,d),(5,e);(6,f);(7,g);(8,h)}$
+      \item $X \leftarrow 960$
+      \item $Mark(4) \leftarrow \mset{a,b,c,d,e,f,g,h}$
+    \end{itemize}
+
+\end{itemize}
+\end{multicols}
+The algorithm returns $X/|aut(H)|=960/(4!)=40$, which means the embedding was found with probability $1/40=0.025$, which means that this embedding has 6 times less probability of being found than the previous one.
+% \begin{figure}[hbpt]
+%   \centering
+%  \includegraphics[width=0.85\textwidth]{dia2Hmapped}
+%  %\input{dia2H}
+% \end{figure}
+
+\clearpage
+\section{Derivation}
+\begin{proof}[Proof of \autoref{lemmawidth}]
+The width is given by $w = \max_i |E(H_i)|$, where $H_i=H[U_i \cup V_i]$ with $U_i=N_H(V_i)\cap V^{i-1}$ and $V^i=\bigcup_{j\leq i} V_j$. As the $H_i$ are bipartite, the maximum number of edges is $st$ (reached when the complete bipartite graph $K_{s,t}$ is considered).
+
+\end{proof}
+
+
+\begin{proof}[Proof of \autoref{nbverticespartition}]
+Using the proof of the main theorem in \cite{Furer:2008:ACE:1429791.1429826}. $V_1,\ldots,V_{\ell}$ denotes a decomposition of $H$ with width $w$. Consider the bipartite graph $H_i=(U_i,V_i,E_{H_i})$. Let $n_i=n-\sum_{j<i} v_j$, and $L_i=L_{H_i|U_i}(G_i)$, the number of embeddings of $H_i$ in $G_i\in \mathcal{G}(n_i+u_i,p)$ where the mapping of the vertices in $U_i$ to the distinguished vertices in $G_i$ is given. 
+
+\begin{align*} \label{eq}
+ \frac{\mathds{E}_\mathcal{G}[\mathds{E}_\mathcal{A}[Z^2]]}{\mathds{E}_\mathcal{G}[\mathds{E}_\mathcal{A}[Z]]^2}  &= \prod^{\ell}_{i=1} \frac{\mathds{E}[L_i^2]}{\mathds{E}[L_i]^2} \leq \prod^{\ell}_{i=1} (1+\frac{c}{n_i})
+\end{align*}
+In the paper the authors bound the last term to $O(n^c)$ by a telescoping argument (since $n=n_1>n_2>\ldots > n_{\ell}$).
+
+Clearly, we can derive a stricter (more complex) formulation of the upper bound by explicitely writing it in terms of the numbers of vertices in the partition classes $v_i$.
+\begin{align*}
+\prod^{\ell}_{i=1} (1+\frac{c}{n_i}) &= (1+\frac{c}{n_1})(1+\frac{c}{n_2}) \ldots (1+\frac{c}{n_\ell}) \\
+				     &= (1+\frac{c}{n})(1+\frac{c}{n-v_1}) \ldots (1+\frac{c}{n - \sum_{j<\ell} v_j})
+\end{align*}
+
+
+
+
+\end{proof}
+
+\clearpage
+\bibliography{biblio}
+
+\end{document}
+% \begin{tikzpicture}[on grid,scale=1,>=latex, shorten >=0pt, auto, node distance= 0.85cm]
+% \tikzstyle{every node}=[circle, draw, fill= black, inner sep=0pt, minimum width=3pt]
+% \draw[help lines] (0,0) grid (3,2)
+%    \node (1)     {};  
+%    \node (2)[above right=of 1]    {};
+%    \node (3)[below right=of 1]    {};
+%    \node (4)[right=of 3]    {};
+%    \node (5)[above right=of 4]    {};
+%    \path[-] (1)  edge  (2)
+%  	    (1)  edge  (3)
+%  	    (3)  edge  (4)
+% 	    (2)  edge  (5)
+% 	    (4)  edge  (5)
+%    ; 
+% \end{tikzpicture}
+
+	
+

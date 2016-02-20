@@ -1,0 +1,307 @@
+import weka.core.converters.ConverterUtils.DataSource;
+import weka.core.converters.ArffSaver;
+import weka.core.Instance;
+import weka.core.Instances;
+import java.io.*;
+import java.util.*;
+
+class SetMiner {
+	
+
+	public static void main(String[] args) {
+		/*for (String arg: args)
+			System.out.println(arg);*/
+		/*if (args.length < 4) {
+			System.out.println("usage: 4 parameters!!!");
+			return;
+		}*/
+		
+		try {
+			// Read the data specified in the command line
+			DataSource source = new DataSource(args[0]);
+			Instances data = source.getDataSet();
+			if (data.classIndex() == -1)
+				data.setClassIndex(data.numAttributes() - 1);
+
+			Instances result = new Instances(data); //copy the dataset to make predictions for
+			Instances itemsets = new Instances(data,0); //only headers
+			
+			
+			
+			// Find an itemset in this data using CP
+			int[] items = findPattern(data);
+
+			// Select the instances not covered by the itemset
+			InstanceSelection data2 = select(data, items);
+			
+			//while condition variable
+			double condition = data2.getNotSelected().meanOrMode(data.numAttributes() - 1);
+			double selectedMean = data2.getSelected().meanOrMode(data.numAttributes() - 1);
+			double thresholdConst = 1.1;
+
+			// we iteratively search for rules until 5 examples left
+			while (data2.getNotSelected().numInstances() >= 1  && data2.getSelected().numInstances() >= 1) { //(data2.getNotSelected().numInstances() >= 1) {)
+				//(condition > selectedMean * thresholdConst ){//
+				// we use the mean of the covered as prediction
+				
+				double prediction =  getPrediction(data2.getSelected());
+				// update the class labels of the selected
+				for (int i : data2.getIndicesSelected()) {
+					result.instance(i).setClassValue(prediction);
+				}
+
+				// the itemsets file
+				double[] attributes = new double[data.numAttributes()];
+				for (int i : items) {
+					attributes[i] = 1;
+				}
+				attributes[attributes.length-1] = prediction;
+				itemsets.add(new Instance(1, attributes ));
+				
+				Instances dataNew = data2.getNotSelected();
+				// now do it for the remaining
+				items = findPattern(dataNew);
+				data2 = select(dataNew, items);
+//				System.out.println("selected");
+//				System.out.println(data2.getSelected());
+//				System.out.println("not selected");
+//				System.out.println(data2.getNotSelected());
+				condition = data2.getNotSelected().meanOrMode(data.numAttributes() - 1);			
+			}
+			
+			
+			for ()
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			// Write the data to a arff file: the two output arff files
+			ArffSaver saver = new ArffSaver();
+			saver.setInstances(result);
+			saver.setFile(new File("predictions.arff")); //args[2]
+			saver.writeBatch();
+			
+			saver.setInstances(itemsets);
+			saver.setFile(new File("itemsets.arff")); // args[3]
+			saver.writeBatch();
+			
+		
+			/*
+			int[] items2 = findPattern(data2);
+			Instances data3 = selectOld(data2, items2);
+			
+			System.out.println(data3[0].numInstances());
+			System.out.println(data3[1].numInstances());
+			
+			
+			
+			int[] items3 = findPattern(data3);
+			Instances data4 = selectOld(data3, items3);
+			
+			int[] items4 = findPattern(data4);
+			Instances data5 = selectOld(data4, items4);
+	
+			int[] items5 = findPattern(data5);
+			Instances data6 = selectOld(data5, items5);
+			
+			int[] items6 = findPattern(data6);
+			Instances data7 = selectOld(data6, items6);
+			
+			int[] items7 = findPattern(data7);
+			Instances data8 = selectOld(data7, items7);
+			
+			int[] items8 = findPattern(data8);
+			Instances data9 = selectOld(data8, items8);
+			
+			int[] items9 = findPattern(data9);
+			Instances data10 = selectOld(data9, items9);
+			
+			int[] items10 = findPattern(data10);
+			Instances data11 = selectOld(data10, items10);
+			
+			int[] items11 = findPattern(data11);
+			Instances data12 = selectOld(data11, items11);
+			
+			int[] items12 = findPattern(data12);
+			System.out.println(data12);
+			Instances data13 = selectOld(data12, items12);*/
+		}
+		catch ( Exception e ) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	//================================================== median
+	//  Precondition: Array must be sorted
+	private static double median(double[] m) {
+		int middle = m.length/2;  // subscript of middle element
+		if (m.length%2 == 1) {
+			// Odd number of elements -- return the middle one.
+			return m[middle];
+		} else {
+			// Even number -- return average of middle two
+			// Must cast the numbers to double before dividing.
+			return (m[middle-1] + m[middle]) / 2.0;
+		}
+	}//end method median
+
+
+	private static double getPrediction(Instances selected) {
+		//return selected.meanOrMode(selected.numAttributes() - 1);
+		
+		double[] values = selected.attributeToDoubleArray(selected.numAttributes() - 1);
+		Arrays.sort(values);
+		return median(values);
+		
+//		Instances copy = new Instances(selected);
+		
+//		double prediction;
+//		int numInstances = selected.numInstances();
+//		if (numInstances % 2 == 0) {
+//			
+//			double temp1 = copy.kthSmallestValue(selected.numAttributes() - 1, numInstances/2);
+//			double temp2 = copy.kthSmallestValue(selected.numAttributes() - 1, numInstances/2-1);
+//			
+//			prediction = (temp1 + temp2)/2;
+//		}
+//		
+//		else {
+//			prediction = copy.kthSmallestValue(selected.numAttributes() - 1, (numInstances-1)/2);
+//			
+//		}
+		
+	}
+
+
+
+
+
+
+	/***
+	 * Apply the constraint programming system to find the 'best' pattern in a dataset
+	 * @param data
+	 * @return int[] best pattern in the given dataset
+	 * @throws Exception
+	 */
+	public static int[] findPattern ( Instances data ) throws Exception {
+		// Write the data to a arff file
+		ArffSaver saver = new ArffSaver();
+		saver.setInstances(data);
+		saver.setFile(new File("tmpdata.arff"));
+		saver.writeBatch();
+
+		// Run the CP system on the dataset - update the command line to the appropriate path
+		Runtime rt = Runtime.getRuntime();
+
+		// command AND environment path
+		String[] command = {"rimcp/src/rimcp", "-datafile", "tmpdata.arff", "-solfile", "tmppattern"};
+		String[] envpath = {"LD_LIBRARY_PATH=rimcp/lib/gecode-3.4.2/"};
+
+		Process pr = rt.exec(command,envpath);
+		System.out.println("Running rimcp on " + data.numInstances () + " instances" );
+
+		int exitVal = pr.waitFor();
+		System.out.println("Exited with error code "+exitVal);
+
+		// Read the pattern file written by the CP system
+		BufferedReader in = new BufferedReader(new FileReader("tmppattern"));
+		String line, lastline = "";
+		if (!in.ready())
+			throw new IOException();
+		while ((line = in.readLine()) != null) {
+			lastline = line;
+		}
+		System.out.println("Pattern found: " + lastline );
+
+		// Parse the last line (containing the 'best' pattern) into an array of items
+		String items[] = lastline.split(" ");
+		int items2 [] = new int[items.length-2];
+
+		for ( int i = 0; i <items.length-2; i++ ) {
+			items2[i] = Integer.parseInt(items[i]);
+			System.out.println(data.attribute ( items2[i] ).name ());
+		}
+		in.close();
+
+		System.out.println();
+		// Return the set of items
+		return items2;
+	}
+	
+	/**
+	 * Selects instances NOT covered by the itemset
+	 * @param data 
+	 * @param items
+	 * @return instances NOT covered by items
+	 */
+	/*
+	public static Instances selectOld ( Instances data, int items[] ) {
+		Instances data2 = new Instances ( data, 0 );
+
+		for ( int i = 0; i < data.numInstances (); ++i ) {
+
+			for ( int j = 0; j < items.length; ++j ) {
+				if ( data.instance ( i ).value ( items[j] ) == 0 ) {
+
+					// one item is missing, add immediately
+					data2.add ( data.instance ( i ) );
+					break;
+				}
+				
+
+			}
+			
+
+		}
+		
+		return data2;
+	}*/
+
+	/**
+	 * Selects instances according to the itemset
+	 * @param data 
+	 * @param items
+	 * @return instanceselection
+	 */
+	public static InstanceSelection select ( Instances data, int items[] ) {
+		/*Instances data2 = new Instances ( data, 0 );
+		Instances data3 = new Instances(data,0);
+		Instances[] result = {data3, data2};*/
+		InstanceSelection result = new InstanceSelection(data);
+		
+		boolean isCovered = false;
+		
+		for ( int i = 0; i < data.numInstances (); ++i ) {
+			isCovered = false;
+			for ( int j = 0; j < items.length; ++j ) {
+				if ( data.instance ( i ).value ( items[j] ) == 0 ) {
+					isCovered = false;
+					// one item is missing, add immediately
+					//result.add ( data.instance ( i ) );
+					result.addNotSelected(data.instance(i));
+					break;
+				}
+				
+				else {
+					isCovered = true;
+				}
+			}
+			
+			if (isCovered) {
+				//data3.add(data.instance(i));
+				result.addSelected(data.instance(i));
+				result.addIndicesSelected(i);
+			}
+		}
+		
+		return result;
+	}
+	
+}

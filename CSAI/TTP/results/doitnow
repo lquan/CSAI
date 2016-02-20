@@ -1,0 +1,5 @@
+gnuplot "plottheshit.p"
+cp *.eps ../verslag/img
+
+echo "done"
+

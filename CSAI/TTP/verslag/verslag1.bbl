@@ -1,0 +1,76 @@
+\begin{thebibliography}{10}
+
+\bibitem{paper}
+A.~Anagnostopoulos, L.~D. Michel, P.~{Van Hentenryck}, and Y.~Vergados.
+\newblock A simulated annealing approach to the traveling tournament problem.
+\newblock {\em Journal of Scheduling}, 9:177--193, 2006.
+
+\bibitem{metaheuristics}
+J.~Dr{\'e}o, A.~P{\'e}trowski, and E.~Taillard.
+\newblock {\em Metaheuristics for Hard Optimization: Methods and Case Studies}.
+\newblock Springer-Verlag, 2006.
+
+\bibitem{ttp}
+K.~Easton, G.~Nemhauser, and M.~Trick.
+\newblock The traveling tournament problem description and benchmarks.
+\newblock In {\em Proceedings of the 7th International Conference on Principles
+  and Practice of Constraint Programming}, volume 2239, pages 580--584, 2001.
+
+\bibitem{simulatedannealing}
+S.~Kirkpatrick, J.~D. Gelatt, and M.~P. Vecchi.
+\newblock Optimization by simulated annealing.
+\newblock {\em Science}, 220(4598):671--680, 1983.
+
+\bibitem{betterneighborhood}
+G.~Langford.
+\newblock An improved neighbourhood for the traveling tournament problem.
+\newblock {\em CoRR}, abs/1007.0501:1--12, 2010.
+
+\bibitem{parallelSA}
+E.~Onba\c{s}o\u{g}lu and L.~{\"O}zdamar.
+\newblock Parallel simulated annealing algorithms in global optimization.
+\newblock {\em Journal of Global Optimization}, 19:27--50, January 2001.
+
+\bibitem{parallelSA2}
+D.~J. Ram, T.~H. Sreenivas, and K.~G. Subramaniam.
+\newblock Parallel simulated annealing algorithms.
+\newblock {\em Journal of Parallel and Distributed Computing}, 37:207--212,
+  September 1996.
+
+\bibitem{hybrid}
+B.~Rodrigues, A.~Lim, B.~Rodrigues, and X.~Zhang.
+\newblock A simulated annealing and hill-climbing algorithm for the traveling
+  tournament problem.
+\newblock {\em European Journal of Operational Research}, 174:1459--1478, 2006.
+
+\bibitem{heuristicApproach}
+F.~Ryckbosch, G.~{Vanden Berghe}, and G.~Kendall.
+\newblock A heuristic approach for the travelling tournament problem using
+  optimal travelling salesman tours.
+\newblock In {\em Proceedings of the 7th international conference on practice
+  and theory of automated timetabling}, 2008.
+
+\bibitem{matlab}
+{The MathWorks, Inc.}
+\newblock {\em Techniques for Improving Performance}, 2011.
+\newblock
+  \url{http://www.mathworks.com/help/techdoc/matlab_prog/f8-784135.html}.
+
+\bibitem{website}
+M.~Trick.
+\newblock Challenge traveling tournament problems, 2011.
+\newblock \url{http://mat.gsia.cmu.edu/TOURN/}.
+
+\bibitem{paper2}
+P.~{Van Hentenryck} and Y.~Vergados.
+\newblock Traveling tournament scheduling: A systematic evaluation of simulated
+  annealing.
+\newblock In {\em CPAIOR}, pages 228--243, 2006.
+
+\bibitem{populationSA}
+P.~{Van Hentenryck} and Y.~Vergados.
+\newblock Population-based simulated annealing for traveling tournaments.
+\newblock In {\em Proceedings of the 22nd national conference on Artificial
+  intelligence}, volume~1, pages 267--272. AAAI Press, 2007.
+
+\end{thebibliography}

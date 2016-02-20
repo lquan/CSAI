@@ -1,0 +1,35 @@
+\relax 
+\catcode`"\active
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
+\bibstyle{acm}
+\citation{ttp}
+\citation{paper}
+\citation{simulatedannealing}
+\citation{heuristicApproach}
+\select@language{dutch}
+\@writefile{toc}{\select@language{dutch}}
+\@writefile{lof}{\select@language{dutch}}
+\@writefile{lot}{\select@language{dutch}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Inleiding}{1}{section.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Beschrijving}{2}{section.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Nabuurschap}{2}{section.3}}
+\bibdata{biblio}
+\bibcite{paper}{{1}{}{{}}{{}}}
+\bibcite{ttp}{{2}{}{{}}{{}}}
+\bibcite{simulatedannealing}{{3}{}{{}}{{}}}
+\bibcite{heuristicApproach}{{4}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\@writefile{toc}{\contentsline {section}{\numberline {4}Implementatie}{3}{section.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experimenten}{3}{section.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusie}{3}{section.6}}

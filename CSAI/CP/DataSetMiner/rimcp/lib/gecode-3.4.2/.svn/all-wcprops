@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/csai_pm/!svn/ver/7/DataSetMiner/rimcp/lib/gecode-3.4.2
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/LICENSE
+END
+libgecodedriver.so.25.0
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/7/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodedriver.so.25.0
+END
+libgecodesearch.so.25.0
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/7/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodesearch.so.25.0
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/configure
+END
+libgecodeint.so.25
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodeint.so.25
+END
+libgecodesupport.so.25
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodesupport.so.25
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/install-sh
+END
+libgecodeint.so.25.0
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/csai_pm/!svn/ver/7/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodeint.so.25.0
+END
+libgecodesupport.so.25.0
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodesupport.so.25.0
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/Makefile.in
+END
+configure.ac.in
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/configure.ac.in
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/Makefile
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/configure.ac
+END
+doxygen.hh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/doxygen.hh
+END
+gecode.m4
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/gecode.m4
+END
+Makefile.dep
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/Makefile.dep
+END
+libgecodeint.so
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodeint.so
+END
+libgecodesupport.so
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodesupport.so
+END
+doxygen.conf
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/doxygen.conf
+END
+libgecodedriver.so
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodedriver.so
+END
+libgecodesearch.so
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodesearch.so
+END
+libgecodekernel.so.25
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodekernel.so.25
+END
+libgecodekernel.so.25.0
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/csai_pm/!svn/ver/7/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodekernel.so.25.0
+END
+libgecodegist.so.25.0
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodegist.so.25.0
+END
+libgecodekernel.so
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodekernel.so
+END
+Makefile.contribs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/Makefile.contribs
+END
+config.status
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/csai_pm/!svn/ver/7/DataSetMiner/rimcp/lib/gecode-3.4.2/config.status
+END
+changelog.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/changelog.in
+END
+libgecodedriver.so.25
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodedriver.so.25
+END
+libgecodesearch.so.25
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/csai_pm/!svn/ver/5/DataSetMiner/rimcp/lib/gecode-3.4.2/libgecodesearch.so.25
+END
